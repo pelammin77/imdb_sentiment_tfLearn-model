@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\Projektit\\Python_projects\\sentiment_DL\\model.tfl"
+all_model_checkpoint_paths: "D:\\Projektit\\Python_projects\\sentiment_DL\\model.tfl"
