@@ -50,10 +50,11 @@ net = tflearn.regression(net, optimizer='adam', learning_rate=0.001,
 #------------------------
 n_epoch = 100
 model = tflearn.DNN(net, tensorboard_verbose=0)
-########################################################################
-#first time you use this for training and save the model whn your done
+
+#-------------------------------------------------------------------------
+#first time you use this for training and save the model when your done
 # You can decrease n_epoch value to speed up the training now it is 100
-########################################################################
+#------------------------------------------------------------------------
 #model.fit(trainX, trainY,     #training
 #          validation_set=(testX, testY),
 #          n_epoch=n_epoch,
@@ -61,7 +62,6 @@ model = tflearn.DNN(net, tensorboard_verbose=0)
 #         batch_size=32,  snapshot_epoch=True, # Snapshot (save & evaluate) model every epoch.
 #          snapshot_step=500, # Snapshot (save & evalaute) model every 500 steps.
 #          run_id='model_and_weights')
-
 #model.save('model.tfl')  # Save the model
 #print('Model Saved!')
 
@@ -70,7 +70,9 @@ print('Model Loaded!')
 
 print('Classifier\'s Accuracy:',model.evaluate(testX, testY))
 
-# 5.resume the training for 1 epoch
+# 5.
+############################################
+# resume the training for 1 epoch
 #############################################
 #model.fit(trainX, trainY,
 #          validation_set=(testX, testY),
